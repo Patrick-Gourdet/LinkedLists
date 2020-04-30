@@ -36,7 +36,7 @@ void NodeController::insert_front(const int value, NodeClass* first_node)
 	auto* node = NodeController::new_node_func();
 	node->next = first_node;
 	first_node = node;
-	node = node->next;
+
 	first_node->value = value;
 }
 
